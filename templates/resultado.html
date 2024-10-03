@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado do Cadastro</title>
+</head>
+<body>
+    <h1>Dados do Cadastro</h1>
+    <ul>
+        <li><strong>Nome:</strong> {{ nome }}</li>
+        <li><strong>Data de Nascimento:</strong> {{ data_nascimento }}</li>
+        <li><strong>Idade:</strong> {{ idade }}</li>
+    </ul>
+    <h2>Os dados estão corretos?</h2>
+    <form action="/sucesso" method="GET">
+        <input type="submit" value="Sim, cadastro realizado com sucesso!">
+    </form>
+    <form action="/" method="GET">
+        <input type="submit" value="Não, voltar para o cadastro">
+    </form>
+</body>
+</html>
